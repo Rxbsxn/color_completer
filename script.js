@@ -1,19 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Color autosearch</title>
-</head>
-<body>
-
-  <form class="search-form">
-    <input type="text" class="search" placeholder="Search for color">
-    <input type="button" class="btn-clear" value="Clear">
-    <ul class="colors">
-    </ul>
-  </form>
-<script>
-  const endpoint = 'https://gist.githubusercontent.com/Rxbsxn/0f3d51a048b68a9c200697ccf0b60c5a/raw/1917df9020450cfad453baab98c8d8e41cfac41c/colors.json';
+const endpoint = 'https://gist.githubusercontent.com/Rxbsxn/0f3d51a048b68a9c200697ccf0b60c5a/raw/1917df9020450cfad453baab98c8d8e41cfac41c/colors.json';
   
   const colors = [];
 
@@ -55,7 +40,3 @@
   clearButton.addEventListener('click', clearInput);
   searchInput.addEventListener('change', displayMatches);
   searchInput.addEventListener('keyup', displayMatches);
-
-</script>
-  </body>
-</html>
